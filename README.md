@@ -14,6 +14,36 @@
 
 ---
 
+## Getting Started
+
+### Prerequisites
+
+- Pyenv
+
+```
+curl https://pyenv.run | bash
+
+pyenv install 2.7.15
+pyenv gloabl 2.7.15
+which python
+```
+
+- Add to `~/.zshrc`
+
+```
+# Load pyenv automatically
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+```
+
+
+## Usage (macOS/Linux)
+
+```
+make install; make run
+```
+
 Generates domain names for startups and cross-checks if the domain name exists. Shows the user a name with available domain names.
 
 Requirements:

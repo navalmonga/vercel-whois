@@ -12,6 +12,12 @@ clean-build:
 	rm --force --recursive dist/
 	rm --force --recursive *.egg-info
 
+install:
+	pyenv install 2.7.16
+	pyenv local 2.7.16
+	python --version
+	pip install -r requirements.txt
+
 isort:
 	sh -c "isort --skip-glob=.tox --recursive . "
 
