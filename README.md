@@ -1,15 +1,22 @@
 <h1 align="center">
-  pywhois
+  Vercel-WHOIS
 </h1>
+
+<p align="center">
+  <a href="https://vercel.com">
+    <img src="https://assets.vercel.com/image/upload/front/favicon/round-2/144x144.png" height="24px" alt="vercel badge">
+  </a>
+</p>
 
 <p align="center">
   <a href="https://github.com/navalmonga/pywhois/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="pywhois: This project is released under the MIT license." />
   </a>
   <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome!" />
-  <a href="https://app.netlify.com/sites/navalm/deploys">
-    <img src="https://api.netlify.com/api/v1/badges/3840c696-887b-4000-9fab-460698163067/deploy-status" alt="netlify deploy status">
-  </a>
+</p>
+
+<p align="center">
+  <img src="./vercel-whois-example.png" alt="vercel-whois example run" width="500px" />
 </p>
 
 ---
@@ -41,7 +48,7 @@ eval "$(pyenv virtualenv-init -)"
 ## Usage (macOS/Linux)
 
 ```
-make install; make run
+make install-python; make install; make
 ```
 
 Generates domain names for startups and cross-checks if the domain name exists. Shows the user a name with available domain names.

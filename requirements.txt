@@ -1,3 +1,5 @@
 termcolor
 selenium
 whois
+pyfiglet
+python-dotenv

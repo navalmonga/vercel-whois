@@ -1,6 +1,9 @@
 HOST=127.0.0.1
 TEST_PATH=./
 
+start:
+	python vercel_whois.py
+
 clean-pyc:
 	rm -f *.pyc
 	rm -f *.pyo
@@ -12,9 +15,11 @@ clean-build:
 	rm --force --recursive dist/
 	rm --force --recursive *.egg-info
 
-install:
+install-python:
 	pyenv install 2.7.16
 	pyenv local 2.7.16
+
+install:
 	python --version
 	pip install -r requirements.txt
 
@@ -26,9 +31,6 @@ lint:
 
 test: clean-pyc
 	py.test --verbose --color=yes $(TEST_PATH)
-
-run:
-	python pywhois.py
 
 docker-run:
 	docker build \

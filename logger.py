@@ -7,4 +7,4 @@ def log(level, msg):
     "SUCCESS": "green",
     "": "white",
   }
-  print(colored(msg, level_switch.get(level)))
+  print(colored(msg, level_switch.get(level))),
