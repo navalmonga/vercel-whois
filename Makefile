@@ -3,7 +3,8 @@ TEST_PATH=./
 
 start:
 	python vercel_whois.py
-
+clean-cd:
+	rm chromedriver*
 clean-pyc:
 	rm -f *.pyc
 	rm -f *.pyo
@@ -15,14 +16,15 @@ clean-build:
 	rm --force --recursive dist/
 	rm --force --recursive *.egg-info
 
-install-python:
-	pyenv install 2.7.16
-	pyenv local 2.7.16
-
+install-cd:
+	curl https://chromedriver.storage.googleapis.com/87.0.4280.88/chromedriver_mac64.zip -o chromedirver_mac64.zip
+	unzip chromedirver_mac64.zip
+	rm chromedirver_mac64.zip
 install:
+	pyenv install 2.7.16
 	python --version
+pip-install:
 	pip install -r requirements.txt
-
 isort:
 	sh -c "isort --skip-glob=.tox --recursive . "
 

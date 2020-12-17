@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-  <img src="./vercel-whois-example.png" alt="vercel-whois example run" width="500px" />
+  <img src="./vercel-whois-ex.png" alt="vercel-whois example run" height="500px" />
 </p>
 
 ---
@@ -48,7 +48,7 @@ eval "$(pyenv virtualenv-init -)"
 ## Usage (macOS/Linux)
 
 ```
-make install-python; make install; make
+make install; ./run
 ```
 
 Generates domain names for startups and cross-checks if the domain name exists. Shows the user a name with available domain names.
